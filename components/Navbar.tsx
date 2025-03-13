@@ -33,8 +33,8 @@ const Navbar = () => {
                     })}
                   </ul>
           <ThemeToggle />
-          <Button>
-            Download CV
+          <Button className='hidden lg:block'> 
+          ⬇️ Download CV
           </Button>
               </div>
           </div>
