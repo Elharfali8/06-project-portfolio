@@ -10,7 +10,7 @@ import { FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6'
 const About = () => {
   return (
       <section id='about' className='py-[64px] lg:py-[96px] bg-gray-100 dark:bg-gray-800'>
-          <SectionTitle text='about me' />
+          <SectionTitle text='about me' subTitle='' />
           <div className='container main-container grid place-items-center  lg:grid-cols-2 gap-8 mt-10 '>
           <div className='relative mt-10 lg:mt-0 '>
               <motion.div
@@ -27,7 +27,7 @@ const About = () => {
               <div>
                   <TextFade
                         direction="down"
-                        className="mt-2 lg:mt-4"
+                        className="mt-4 lg:mt-8"
                   >
                       <h1 className='text-2xl md:text-3xl lg:text-4xl mb-2 lg:mb-4 poppins-semibold'>Curious about me? Here you have it:</h1>
                       <p className='text-gray-600 dark:text-gray-300 text-lg lg:text-xl'>
