@@ -5,10 +5,12 @@ import pic1 from '@/assets/Pic.png'
 import { LettersPullUp } from './LettersPullUp'
 import {motion} from 'framer-motion'
 import { TextFade } from './TextFade'
+import { FaLocationDot } from "react-icons/fa6";
+
 
 const Hero = () => {
   return (
-      <section id='/' className='min-h-[calc(100vh-80px)] grid place-items-center'>
+      <section id='/' className='min-h-[calc(100vh-80px)] grid place-items-center py-[64px] lg:py-0'>
           <div className="container main-container grid place-items-center lg:grid-cols-2 gap-8">
               <div className='mt-10 lg:mt-0 flex flex-col items-center lg:items-start order-2 lg:order-1'>
                   <motion.p
@@ -28,7 +30,20 @@ const Hero = () => {
                             I'm a <span>frontend web developer</span> passionate about crafting modern, responsive, and interactive web applications. I specialize in <span className='text-blue-500 '>React, Next.js, TypeScript, and Tailwind CSS,</span> creating smooth user experiences with Framer Motion animations. Always learning and improving. I turn ideas into beatiful and functional websites.
                         </p>
                   </TextFade>
-                  <div className='mt-6 lg:mt-8'>
+                  <TextFade
+                    direction="up"
+                        className="mt-2 lg:mt-4"
+                  >
+                      <div className='grid gap-y-4'>
+                          <div className='flex items-center gap-3'>
+                              <FaLocationDot size={24} />
+                              <span className='lg:text-lg poppins-medium'>
+                                  Marrakech, Morocco
+                              </span>
+                          </div>
+                      </div>
+                  </TextFade>
+                  <div className='mt-6 lg:mt-8 '>
                       <motion.a
                           href='#projects'
                           className='px-6 py-3 bg-blue-500 transition-all ease-in-out duration-150 hover:bg-blue-600 text-white text-lg poppins-semibold rounded-lg mt-3'
